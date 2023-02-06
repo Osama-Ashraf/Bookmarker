@@ -1,0 +1,14 @@
+.form{
+    background-color: #EEE;
+    border: none;
+    text-align: center;
+    padding: 30px;
+}
+label{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

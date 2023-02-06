@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Bookmarker</title>
+</head>
+<body class="container my-5">
+    <h1 class="text-gray">Bookmarker</h1>
+    <hr>
+
+    <div class="form form-control">
+
+      <h3 class="my-2">Bookmark your favorite sites</h3>
+
+      <label for="siteName" class="d-block mt-5">siteName</label>
+      <input type="text" placeholder="Bookmark Name" class="w-75 my-2" id="siteName">
+      <p class="alert alert-danger w-75 m-auto d-none" id="nameAlert"></p>
+
+      <label for="url" class="d-block mt-3">Url</label>
+      <input type="text" placeholder="Website URL" class="w-75 my-2" id="url">
+      <p class="alert alert-danger w-75 m-auto d-none" id="urlAlert"></p>
+
+      <div id="buttons"></div>
+
+
+    </div>
+    <div id="records" class="d-block">
+
+    </div>
+
+
+    <script src="JS/index.js"></script>
+</body>
+</html>
