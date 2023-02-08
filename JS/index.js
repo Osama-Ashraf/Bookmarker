@@ -79,7 +79,6 @@ function validateUrl(context){
         }
     
 }
- 
 
 function addMark(){
     if(validateName() & validateUrl()){
@@ -101,10 +100,10 @@ function display(arr){
     var cartona = ``;
     for(var i = 0; i < arr.length; i++){
         cartona+= `<div class="mt-5 form d-flex mb-3">
-        <h4 class="w-50 m-2">${arr[i].name}</h4>
-        <button class="btn btn-info col-1  m-2"><a href="${arr[i].link}" target="_blank">Visit</a></button>
-        <button onclick="uptadeMark(${i});" class="btn btn-warning col-1 m-2">Uptade</button>
-        <button onclick="deleteMark(${i});" class="btn btn-danger col-1 m-2">Delete</button>
+        <h4 class=" col-md-4 m-2">${arr[i].name}</h4>
+        <button class="btn btn-info   m-2 col-2"><a href="${arr[i].link}" target="_blank">Visit</a></button>
+        <button onclick="uptadeMark(${i});" class="btn btn-warning m-2  col-md-2 col-3">Uptade</button>
+        <button onclick="deleteMark(${i});" class="btn btn-danger m-2 col-2">Delete</button>
     </div>`;
     }
 
@@ -116,7 +115,7 @@ function switchLayout(bool,i){
     if(bool){
         nameAlert.classList.replace("d-block","d-none");
         urlAlert.classList.replace("d-block","d-none");
-        buttons.innerHTML = `<button onclick="addMark();" class="btn btn-primary w-25 mx-auto mt-5" id="addMark">Add Bookmark</button>`;
+        buttons.innerHTML = `<button onclick="addMark();" class="btn btn-primary col-4 mx-auto mt-5" id="addMark">Add Bookmark</button>`;
         records.classList.add('d-block');
         records.classList.remove('d-none');
         display(marksContainer);
